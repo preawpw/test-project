@@ -32,7 +32,6 @@ var image = new Jimp(256, 256, 0xFF0000FF, function (err, image) {
 ### Low-level manipulation ###
 
 Jimp enables low-level manipulation of images in memory through the bitmap property of each Jimp object:
-
 ```js
 image.bitmap.data;  // a Buffer of the raw bitmap data
 image.bitmap.width; // the width of the image
