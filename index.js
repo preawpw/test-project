@@ -21,6 +21,7 @@ function radar_callback(input1, input2, output, callback) {
                         }
                     }
                 }
+                img3.write(output);
                 img3.getBuffer(Jimp.MIME_PNG, function (err, img) {//แปลงรูปเอ้าพุทเป็นไบนารี่
                     callback(null, img);
                 })
