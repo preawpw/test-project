@@ -3,7 +3,7 @@ var radar = require('./lib/Radar_IMG');
 var avg = require('./lib/Radar_IMG/AVGfunction.js');
 var port = process.env.PORT || 7777;
 app.get("/currentimage", function(req, res) {
-    radar.radar_callback("29aug9.20.jpg"/*"http://203.155.220.231/Radar/pics/zfiltered.jpg"*/,"bgtest.jpg"/*"bgnck.jpg"*/,"currentRadar.png", function(err,img){       
+    radar.radar_callback("http://203.155.220.231/Radar/pics/zfiltered.jpg","bgnck.jpg","currentRadar.png", function(err,img){       
         res.type('png');
         res.send(img);       
     });
